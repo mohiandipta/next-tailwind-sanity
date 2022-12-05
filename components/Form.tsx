@@ -1,6 +1,6 @@
 export default function Form() {
   return (
-    <div className="container py-20 px-6 h-full">
+    <div className="container py-12 px-6 h-full">
       <div className="flex justify-center items-center flex-wrap h-full g-6 text-white">
         <div className="lg:w-6/6">
           <div className="block bg-gray-900 shadow-lg rounded-lg">
