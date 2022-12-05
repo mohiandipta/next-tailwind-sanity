@@ -1,11 +1,11 @@
 export default function Form() {
   return (
-    <div className="container py-32 px-6 h-full">
+    <div className="container py-20 px-6 h-full">
       <div className="flex justify-center items-center flex-wrap h-full g-6 text-white">
-        <div className="xl:w-12/12">
+        <div className="lg:w-6/6">
           <div className="block bg-gray-900 shadow-lg rounded-lg">
             <div className="lg:flex lg:flex-wrap g-0">
-              <div className="lg:w-12/12 px-4 md:px-0">
+              <div className="lg:w-6/6 px-4 md:px-0">
                 <div className="md:p-14 md:mx-6">
                   <form>
                     <p className="mb-4">Please login to your account</p>
@@ -13,7 +13,7 @@ export default function Form() {
                       <input
                         type="text"
                         className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                        id="exampleFormControlInput1"
+                        id="FormControlInput1"
                         placeholder="Username"
                       />
                     </div>
@@ -21,9 +21,35 @@ export default function Form() {
                       <input
                         type="password"
                         className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                        id="exampleFormControlInput1"
+                        id="FormControlInput1"
                         placeholder="Password"
                       />
+                    </div>
+                    <p className="text-sm font-medium text-gray-900 dark:text-gray-300 mb-8">
+                      Neque porro quisquam est qui dolorem
+                    </p>
+
+                    <div className="flex items-center mb-4">
+                      <input
+                        id="default-checkbox"
+                        type="checkbox"
+                        value=""
+                        className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      />
+                      <label className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Neque porro quisquam est qui dolorem
+                      </label>
+                    </div>
+                    <div className="flex items-center mb-8">
+                      <input
+                        id="checked-checkbox"
+                        type="checkbox"
+                        value=""
+                        className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                      />
+                      <label className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Neque porro quisquam est qui dolorem ipsum quia dolor
+                      </label>
                     </div>
                     <div className="text-center pt-1 mb-12 pb-1">
                       <button
@@ -36,7 +62,7 @@ export default function Form() {
                             "linear-gradient( to right, #ee7724, #d8363a, #dd3675, #b44593)",
                         }}
                       >
-                        Log in
+                        Submit
                       </button>
                       <a className="text-gray-300" href="#!">
                         Forgot password?
