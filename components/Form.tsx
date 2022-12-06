@@ -1,59 +1,91 @@
 export default function Form() {
   return (
     <div className="container py-12 px-6 h-full">
-      <div className="flex justify-center items-center flex-wrap h-full g-6 text-white">
+      <div className="flex justify-center mx-5 items-center flex-wrap h-full g-6 text-white">
         <div className="lg:w-6/6">
           <div className="block bg-gray-900 shadow-lg rounded-lg">
             <div className="lg:flex lg:flex-wrap g-0">
-              <div className="lg:w-6/6 px-4 md:px-0">
-                <div className="md:p-14 md:mx-6">
+              <div className="w-full lg:w-[480px] px-2 rounded-md bg-slate-800">
+                <div className="md:p-2 md:mx-6">
                   <form>
-                    <p className="mb-4">Please login to your account</p>
+                    <p className="mb-2">Your Name</p>
                     <div className="mb-4">
                       <input
                         type="text"
                         className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         id="FormControlInput1"
-                        placeholder="Username"
+                        placeholder="Enter Your Name"
                       />
                     </div>
+                    <p className="mb-2">Phone Number</p>
                     <div className="mb-4">
                       <input
-                        type="password"
+                        type="text-pass"
                         className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                        id="FormControlInput1"
-                        placeholder="Password"
+                        id="FormControlInput2"
+                        placeholder="Enter Your Phone Number"
                       />
                     </div>
-                    <p className="text-sm font-medium text-gray-900 dark:text-gray-300 mb-8">
-                      Neque porro quisquam est qui dolorem
+                    <p className="mb-2">E-mail</p>
+                    <div className="mb-4">
+                      <input
+                        type="email"
+                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        id="FormControlInput3"
+                        placeholder="Enter Your Email"
+                      />
+                    </div>
+
+                    <div className="flex justify-start">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input h-5 w-5 cursor-pointer accent-orange-600  transition duration-200 align-top  float-left mr-2 mt-2"
+                          type="checkbox"
+                        />
+                        <label
+                          className="form-check-label inline-block text-white"
+                          // for="flexCheckDefault"
+                        >
+                          <small>
+                            {" "}
+                            * Lorem ipsum dolor sit amet consectetur{" "}
+                            <span className="underline underline-offset-1">
+                              adipisicing
+                            </span>{" "}
+                            elit
+                          </small>
+                        </label>
+                      </div>
+                    </div>
+                    <p className="text-start ml-9 text-sm text-white underline underline-offset-1">
+                      Lorem ipsum dolor sit amet.
                     </p>
 
-                    <div className="flex items-center mb-4">
-                      <input
-                        id="default-checkbox"
-                        type="checkbox"
-                        value=""
-                        className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                      />
-                      <label className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        Neque porro quisquam est qui dolorem
-                      </label>
+                    <div className="flex justify-start">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input h-5 w-5 cursor-pointer accent-orange-600  transition duration-200 align-top  float-left mr-1 mt-2"
+                          type="checkbox"
+                        />
+                        <label
+                          className="form-check-label inline-block text-white"
+                          // for="flexCheckDefault"
+                        >
+                          <small className="ml-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.{" "}
+                          </small>
+                        </label>
+                      </div>
                     </div>
-                    <div className="flex items-center mb-8">
-                      <input
-                        id="checked-checkbox"
-                        type="checkbox"
-                        value=""
-                        className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                      />
-                      <label className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                        Neque porro quisquam est qui dolorem ipsum quia dolor
-                      </label>
-                    </div>
-                    <div className="text-center pt-1 mb-12 pb-1">
+                    <p className="text-start ml-9 text-sm text-white">
+                      Perspiciatis laborum esse qui deserunt quas aperiam
+                      quisquam hic repudiandae illum
+                    </p>
+
+                    <div className="text-center mx-28 pt-5 mb-1 ">
                       <button
-                        className="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
+                        className="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3"
                         type="button"
                         data-mdb-ripple="true"
                         data-mdb-ripple-color="light"
@@ -64,11 +96,11 @@ export default function Form() {
                       >
                         Submit
                       </button>
-                      <a className="text-gray-300" href="#!">
+                      {/* <a className="text-gray-300" href="#!">
                         Forgot password?
-                      </a>
+                      </a> */}
                     </div>
-                    <div className="flex items-center justify-between pb-6">
+                    {/* <div className="flex items-center justify-between pb-6">
                       <p className="mb-0 mr-2">Dont have an account?</p>
                       <button
                         type="button"
@@ -78,7 +110,7 @@ export default function Form() {
                       >
                         Register
                       </button>
-                    </div>
+                    </div> */}
                   </form>
                 </div>
               </div>
