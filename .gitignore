@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/sform/node_modules
 /.pnp
 .pnp.js
 
