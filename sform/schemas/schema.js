@@ -2,7 +2,6 @@
 import createSchema from 'part:@sanity/base/schema-creator'
 
 import Form from './Form'
-import Animal from './animal'
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
@@ -14,7 +13,6 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    Form,
-    Animal
+    Form
   ]),
 })

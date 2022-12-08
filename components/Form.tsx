@@ -3,7 +3,6 @@ import { groq } from "next-sanity";
 import { config } from "../src/config";
 import { tForm } from "../src/types/Form";
 
-
 export default function Form() {
   const [data, setData] = useState([]);
 
@@ -48,25 +47,6 @@ export default function Form() {
                         </>
                       );
                     })}
-                    
-                    {/* <p className="mb-2">Phone Number</p>
-                    <div className="mb-4">
-                      <input
-                        type="text-pass"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                        id="FormControlInput2"
-                        placeholder="Enter Your Phone Number"
-                      />
-                    </div> */}
-                    {/* <p className="mb-2">E-mail</p>
-                    <div className="mb-4">
-                      <input
-                        type="email"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                        id="FormControlInput3"
-                        placeholder="Enter Your Email"
-                      />
-                    </div> */}
 
                     <div className="flex justify-start">
                       <div className="form-check">
