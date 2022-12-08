@@ -6,7 +6,7 @@ First, run the development server:
 npm run dev
 ```
 
-Then, for run sanity studuio development server:
+Then, for run sanity studio development server:
 ### Open another terminal and enter command
 `cd sForm`
 
