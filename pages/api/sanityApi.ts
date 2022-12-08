@@ -17,6 +17,14 @@ export interface sForm {
   _lebel: string;
   _input: string;
 }
+export interface Animal {
+  _createdAt:string;
+  _id:string
+  _rev:string
+  _type: string;
+  _updatedAt: string;
+  _name: string;
+}
 
 const GetFormData = async(req:NextApiRequest, res:NextApiResponse) => {
     const response: sForm[] = await sanityClient.fetch(query)

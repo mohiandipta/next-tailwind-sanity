@@ -2,8 +2,8 @@
 
 export default ({
     name: 'form',
-    title: 'Form',
     type: 'document',
+    title: 'Form',
     fields: [
         ({
             name: 'sortNum',
